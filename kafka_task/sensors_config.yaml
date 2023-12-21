@@ -1,0 +1,15 @@
+- sensor_name: sensor1
+  type: temperature
+  distribution: normal
+  delay: 10
+  working_time: 3600
+- sensor_name: sensor2
+  type: humidity
+  distribution: geometric
+  delay: 15
+  working_time: 3600
+- sensor_name: sensor3
+  type: humidity
+  distribution: poisson
+  delay: 15
+  working_time: 3600
