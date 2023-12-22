@@ -1,0 +1,8 @@
+- channel_name: ebaresearch
+  output_dir: output
+  delay: 60
+  working_time: 3600
+- channel_name: champussyspb
+  output_dir: output
+  delay: 60
+  working_time: 3600
