@@ -33,7 +33,7 @@ class DummyContentCrawler:
     def __init__(self) -> None:
         self.current_text = ""
         self.current_media = False
-        self.current_media_amount = 0
+        self.current_media_amount = -1
         self.current_timestamp = ""
 
     def get_HTML_content(
@@ -52,6 +52,7 @@ class DummyContentCrawler:
             "div", {"class": "tgme_widget_message_text js-message_text"}
         )
         text_content = text_content[-1].text
+        text_content = text_content.lower()
         self.current_text = text_content
 
         video_content_len = len(soup.find_all(
